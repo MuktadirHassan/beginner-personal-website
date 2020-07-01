@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto:wght@400;500;700&display=swap');
+
+$pop:'Poppins', sans-serif;
+$rob:'Roboto', sans-serif;
+$grad:linear-gradient(230deg, #f77062 0%, #fe5196 100%);
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+section{
+    height: 768px;
+}
+.container-half{
+    width: 35%;
+    img{
+    width: 80%;
+    }
+}
+.intro,.biography{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+// Generic styles
+h1{
+    color: #fe5196;
+    font-size: 4em;
+    letter-spacing: 3px;
+    margin: 0px 0 30px 0;
+    padding: 10px 0px 30px 0;
+    font-family: $rob;
+    font-weight: bold;
+}
+h2{
+    font-size: 3em;
+    font-family: $rob;
+    font-weight: 500;
+    margin: 0;
+}
+p{
+    margin: 20px 0 0 0;
+    font-family: $pop;
+    font-size: 1em;
+    color: dimgray;
+    line-height: 2em;
+}
+.button{
+    background-image: $grad;
+    width: max-content;
+    display: block;
+    color: white;
+    font-size: 1em;
+    margin-top: 30px;
+    padding: 12px 35px;
+    text-decoration: none;
+    font-family: $rob;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+// Class specific styles
+// Background Images
+.intro{
+    background-image: url('../images/header-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.biography{
+    background-image: url('../images/biography-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.latest-work{
+    background-image: url('../images/latest-work-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    .container-full{
+        margin: auto;
+        width: 80%;
+        h2{
+            text-align: center;
+            margin: 7% 0 10% 0;
+        }
+        img{
+            width: 30%;
+            margin: 0 1%;
+        }
+        
+    }
+
+}
+.experience{
+    margin: auto;
+    background-image: url('../images/dream-bg.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    h2{
+        text-align: center;
+    }
+    .container-half{
+        margin-top: 5%;
+        width: 30%;
+        height: 400px;
+        padding: 10px 2.5%;
+        float: left;
+        border-radius: 6px;
+        box-shadow: 0px 15px 30px rgb(195, 195, 195);
+        overflow: auto;
+        h3{
+            font-size: 2em;
+            font-family: $rob;
+        }
+        h4{
+            font-family: $rob;
+        }
+        .highlighted{
+            color: #fe5196;
+        }
+    }
+    .left{
+        margin-left: 10%;
+    }
+    .right{
+        margin-left: 5%;
+    }
+}
+.testimony{
+    clear: both;
+    height: 650px;
+    text-align: center;
+    background-image: url('../images/footer-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    blockquote{
+        .name{
+            font-size: 1.2em;
+            font-weight: bold;
+            color: black;
+            margin-top: 5%;
+        }
+        .position{
+            font-size: .8em;
+            margin: 0;
+        }
+        .quote{
+            color: black;
+            font-size: 1em;
+            font-style: italic;            
+        }
+    }
+    .contact{
+        background-image: $grad;
+        width: max-content;
+        margin: auto;
+        color: white;
+        padding: 3% 10%;
+        border-radius: 5px;
+        margin-top: 5%;
+        p{
+            font-size: .8em;
+            margin: 0;
+            color: white;
+        }
+        h3{
+            margin: 0;
+            font-family: $pop;
+            font-size: 1.5em;
+        }
+    }
+    
+}
+footer{
+    p{
+        font-size: .8em;
+        text-align: center;
+        font-family: $rob;
+        font-weight: 300;
+        color: dimgray;
+        padding-bottom: 15px;
+    }
+}
+
+
